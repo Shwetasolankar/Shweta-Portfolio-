@@ -20,19 +20,29 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: lightblue; /* Changed from yellow to light blue */
+    color: lightblue;
 }
 
-/* Hero Section - Blurred Black Background */
+/* Hero Section - More Blurred Black Background */
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100vh;
     padding: 0 10%;
-    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
-    backdrop-filter: blur(10px); /* Blurred effect */
+    background: rgba(0, 0, 0, 0.7); /* Darker Transparent Black */
+    backdrop-filter: blur(15px); /* Increased Blur Effect */
     color: white;
+}
+
+/* Common Styling for All Sections */
+section {
+    padding: 50px 10%;
+    background: rgba(0, 0, 0, 0.7); /* Darker Black Transparent */
+    backdrop-filter: blur(15px); /* Stronger Blur Effect */
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 /* Hero Text */
@@ -64,7 +74,7 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background: lightblue; /* Changed hover color */
+    background: lightblue;
     color: black;
 }
 
@@ -82,7 +92,7 @@ nav ul li a:hover {
 }
 
 .social-icons a:hover {
-    color: lightblue; /* Changed hover color */
+    color: lightblue;
 }
 
 /* Hero Image - Removed Yellow Border */
@@ -110,3 +120,4 @@ nav ul li a:hover {
         margin-top: 20px;
     }
 }
+
