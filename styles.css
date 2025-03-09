@@ -20,7 +20,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: yellow;
+    color: white;
 }
 
 /* Hero Section */
@@ -80,7 +80,7 @@ nav ul li a:hover {
 }
 
 .social-icons a:hover {
-    color: yellow;
+    color: white;
 }
 
 /* Hero Image - Removed Yellow Border */
