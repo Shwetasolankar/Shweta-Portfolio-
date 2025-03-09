@@ -83,12 +83,11 @@ nav ul li a:hover {
     color: yellow;
 }
 
-/* Hero Image */
+/* Hero Image - Removed Yellow Border */
 .hero-image img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    border: 5px solid yellow;
     object-fit: cover;
 }
 
@@ -101,9 +100,11 @@ nav ul li a:hover {
         padding: 50px 5%;
     }
 
-    .hero-co
+    .hero-content {
+        max-width: 100%;
+    }
 
-
-
-
-
+    .hero-image img {
+        margin-top: 20px;
+    }
+}
