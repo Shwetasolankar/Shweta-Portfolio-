@@ -1,89 +1,63 @@
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Header Styling */
-header {
-    background: black;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-
-/* Navigation */
-nav ul {
-    list-style: none;
-    padding: 0;
+/* Hero Section */
+.hero {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+    background: linear-gradient(to right, #000000, #333333);
     color: white;
+}
+
+/* Hero Text */
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Resume Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    background: yellow;
+    font-weight: bold;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: yellow;
-}
-
-/* Section Styling */
-section {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Headings */
-h2 {
-    text-align: center;
-    color: #222;
-}
-
-/* Skills List */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    background: #ffcc00;
-    padding: 10px;
-    margin: 5px 0;
     border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
 }
 
-/* Profile Image */
-.profile-img {
-    display: block;
-    margin: 0 auto;
-    width: 150px;
-    height: 150px;
+.btn:hover {
+    background: orange;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+/* Hero Image */
+.hero-image img {
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     border: 5px solid yellow;
+    object-fit: cover;
 }
 
-/* Contact Section */
-#contact p a {
-    color: blue;
-    text-decoration: none;
-}
-
-#contact p a:hover {
-    text-decoration: underline;
-}
 
 
