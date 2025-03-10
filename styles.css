@@ -1,124 +1,57 @@
-/* Navigation Bar */
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    padding: 15px 0;
+/* Skills Section */
+#skills {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f5f5;
 }
 
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: lightblue;
-}
-
-/* Hero Section - More Blurred Black Background */
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    padding: 0 10%;
-    background: rgba(0, 0, 0, 0.7); /* Darker Transparent Black */
-    backdrop-filter: blur(15px); /* Increased Blur Effect */
-    color: white;
-}
-
-/* Common Styling for All Sections */
-section {
-    padding: 50px 10%;
-    background: rgba(0, 0, 0, 0.7); /* Darker Black Transparent */
-    backdrop-filter: blur(15px); /* Stronger Blur Effect */
-    color: white;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-/* Hero Text */
-.hero-content {
-    max-width: 50%;
-}
-
-.hero-content h1 {
-    font-size: 50px;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-.hero-content p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-/* Resume Button */
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    color: black;
-    background: white;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s, color 0.3s;
-}
-
-.btn:hover {
-    background: lightblue;
-    color: black;
-}
-
-/* Social Icons */
-.social-icons {
-    margin-top: 15px;
-}
-
-.social-icons a {
-    display: inline-block;
-    margin-right: 12px;
+#skills h2 {
     font-size: 28px;
-    color: white;
-    transition: color 0.3s;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
 }
 
-.social-icons a:hover {
-    color: lightblue;
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
 }
 
-/* Hero Image - Removed Yellow Border */
-.hero-image img {
+.skill-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
     width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        height: auto;
-        padding: 50px 5%;
-    }
-
-    .hero-content {
-        max-width: 100%;
-    }
-
-    .hero-image img {
-        margin-top: 20px;
-    }
+.skill-card:hover {
+    transform: translateY(-5px);
 }
+
+.skill-card i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.skill-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.skill-card p {
+    font-size: 14px;
+    color: #666;
+}
+
 
 
