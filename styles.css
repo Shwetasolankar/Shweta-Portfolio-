@@ -6,10 +6,10 @@ body {
     background: #f4f4f4;
 }
 
-/* Navigation Bar (Header) - Blur Black Effect */
+/* Navigation Bar */
 header {
-    background: rgba(0, 0, 0, 0.8); /* हलका ब्लर ब्लॅक */
-    backdrop-filter: blur(10px); /* Blur Effect */
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -33,7 +33,7 @@ header nav ul li a {
     font-size: 18px;
 }
 
-/* Hero Section (Home) - Blur Black Background */
+/* Hero Section */
 .hero {
     display: flex;
     justify-content: center;
@@ -41,33 +41,27 @@ header nav ul li a {
     flex-direction: column;
     padding: 50px 20px;
     text-align: center;
-    background: rgba(0, 0, 0, 0.7); /* Blur Black Background */
+    background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(10px);
     color: white;
-}
-
-.hero h1 {
-    font-size: 36px;
-}
-
-.hero p {
-    font-size: 20px;
+    min-height: 100vh;
 }
 
 /* Profile Image - Circle Shape */
 .profile-img {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Image Circle */
+    border-radius: 50%;
     border: 4px solid white;
     display: block;
-    margin: 0 auto;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3); /* Soft Shadow */
+    margin: 20px auto;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
 }
 
-/* About Section - Blur Black Background */
+/* About Section */
 #about {
-    background: rgba(0, 0, 0, 0.7); /* Dark Blur Effect */
+    background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(8px);
     padding: 50px 20px;
     color: white;
@@ -81,83 +75,25 @@ header nav ul li a {
     background: #f4f4f4;
 }
 
-#skills h2 {
-    font-size: 32px;
-    color: #333;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-}
-
 .skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
 }
 
-/* Skill Card - Shadow & Hover Effect */
-.skill-card {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow Effect */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-bottom: 4px solid #007bff;
-}
-
-.skill-card:hover {
-    transform: translateY(-5px); /* हलकासा वर येईल */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* मऊ बॉक्स लुक */
-}
-
-.skill-card i {
-    font-size: 40px;
-    color: #007bff;
-    margin-bottom: 10px;
-}
-
-.skill-card h3 {
-    font-size: 20px;
-    margin: 10px 0;
-    color: #333;
-}
-
-.skill-card p {
-    font-size: 14px;
-    color: #666;
-}
-
-/* Certificates Section - With Images */
+/* Certificates Section */
 #certificates {
     text-align: center;
     padding: 50px 20px;
     background: #f4f4f4;
 }
 
-#certificates h2 {
-    font-size: 32px;
-    color: #333;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-}
-
 .certification-container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 30px 20px;
     flex-wrap: wrap;
-}
-
-.cert-card {
-    background: white;
-    padding: 15px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 220px;
 }
 
 .cert-card img {
@@ -166,39 +102,15 @@ header nav ul li a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Contact Section - Blur Black Background */
+/* Contact Section */
 #contact {
     text-align: center;
     padding: 30px;
-    background: rgba(0, 0, 0, 0.8); /* Blur Black Effect */
+    background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
     color: white;
 }
 
-#contact a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .skills-container {
-        grid-template-columns: 1fr;
-    }
-
-    .certification-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cert-card {
-        width: 90%;
-    }
-}
 
 
 
