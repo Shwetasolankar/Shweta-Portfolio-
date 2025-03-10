@@ -1,112 +1,159 @@
-/* General Styling */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f8f9fa;
+    background: #f4f4f4;
 }
 
-/* Navigation Menu */
-nav {
+/* Navigation Bar */
+header {
     background: #333;
-    padding: 10px;
-    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
 }
 
-nav a {
+header nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    font-size: 18px;
 }
 
-nav a:hover {
-    background: #555;
-}
-
-/* Header Section */
-.header {
-    position: relative;
-    text-align: center;
-    color: white;
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 50px 20px;
+    text-align: center;
+    background: #007bff;
+    color: white;
 }
 
-/* Background Blur Effect */
-.header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('your-background-image.jpg') no-repeat center center/cover;
-    filter: blur(5px);
-    z-index: -1;
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 20px;
 }
 
 /* Profile Image */
 .profile-img {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Makes the image circular */
+    border-radius: 50%;
     border: 4px solid white;
     display: block;
     margin: 0 auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* About Section */
-.about {
+/* Skills Section */
+#skills {
     text-align: center;
-    padding: 40px;
-    background: white;
+    padding: 50px 20px;
+    background: #f4f4f4;
 }
 
-.about h1 {
+#skills h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Skills Grid */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Skill Card */
+.skill-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 4px solid #007bff;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.skill-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
     color: #333;
 }
 
-.about p {
+.skill-card p {
+    font-size: 14px;
     color: #666;
 }
 
-/* Skills Section */
-.skills {
+/* Certifications Section */
+.certification-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    padding: 40px;
-    background: #f1f1f1;
+    gap: 20px;
+    padding: 30px 20px;
 }
 
-.skill-card {
-    width: 250px;
+.cert-card {
     background: white;
-    margin: 10px;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
 }
 
-.skill-card img {
-    width: 40px;
-    height: 40px;
+.cert-card i {
+    font-size: 30px;
+    color: #007bff;
 }
 
 /* Contact Section */
-.contact {
+#contact {
     text-align: center;
-    padding: 20px;
-    background: #333;
+    padding: 30px;
+    background: #222;
     color: white;
 }
 
-.contact a {
-    color: #ffcc00;
+#contact a {
+    color: #007bff;
     text-decoration: none;
 }
 
-.contact a:hover {
+#contact a:hover {
     text-decoration: underline;
 }
+
