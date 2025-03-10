@@ -6,9 +6,10 @@ body {
     background: #f4f4f4;
 }
 
-/* Navigation Bar */
+/* Navigation Bar (Header) - Blur Black Effect */
 header {
-    background: #333;
+    background: rgba(0, 0, 0, 0.8); /* हलका ब्लर ब्लॅक */
+    backdrop-filter: blur(10px); /* Blur Effect */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -32,14 +33,16 @@ header nav ul li a {
     font-size: 18px;
 }
 
-/* Hero Section */
+/* Hero Section (Home) - Blur Black Background */
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px 20px;
     text-align: center;
-    background: #007bff;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-background-image.jpg'); /* Blur Effect */
+    background-size: cover;
+    background-position: center;
     color: white;
 }
 
@@ -51,7 +54,6 @@ header nav ul li a {
     font-size: 20px;
 }
 
-/* Profile Image */
 .profile-img {
     width: 150px;
     height: 150px;
@@ -60,6 +62,15 @@ header nav ul li a {
     display: block;
     margin: 0 auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section - Blur Black Background */
+#about {
+    background: rgba(0, 0, 0, 0.7); /* Dark Blur Effect */
+    backdrop-filter: blur(8px);
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
 }
 
 /* Skills Section */
@@ -76,7 +87,6 @@ header nav ul li a {
     text-transform: uppercase;
 }
 
-/* Skills Grid */
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -85,20 +95,20 @@ header nav ul li a {
     justify-content: center;
 }
 
-/* Skill Card */
+/* Skill Card - Shadow & Hover Effect */
 .skill-card {
     background: white;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow Effect */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-bottom: 4px solid #007bff;
 }
 
 .skill-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px); /* हलकासा वर येईल */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* मऊ बॉक्स लुक */
 }
 
 .skill-card i {
@@ -118,12 +128,13 @@ header nav ul li a {
     color: #666;
 }
 
-/* Certifications Section */
+/* Certificates Section - With Images */
 .certification-container {
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 30px 20px;
+    flex-wrap: wrap;
 }
 
 .cert-card {
@@ -132,19 +143,21 @@ header nav ul li a {
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 200px;
+    width: 220px;
 }
 
-.cert-card i {
-    font-size: 30px;
-    color: #007bff;
+.cert-card img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Contact Section */
+/* Contact Section - Blur Black Background */
 #contact {
     text-align: center;
     padding: 30px;
-    background: #222;
+    background: rgba(0, 0, 0, 0.8); /* Blur Black Effect */
+    backdrop-filter: blur(10px);
     color: white;
 }
 
@@ -156,4 +169,21 @@ header nav ul li a {
 #contact a:hover {
     text-decoration: underline;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .certification-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cert-card {
+        width: 90%;
+    }
+}
+
 
